@@ -31,7 +31,7 @@ a:hover {
   width: 100%;
   clear: both;
   background: 50% 50% no-repeat;
-  padding: 0 50px;
+  padding: 0 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,6 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
+  background: url("img/texture-paper.png");
   background-size: 280px 280px;
 }
 
@@ -322,6 +323,7 @@ a:hover {
 }
 
 .nav > li {
+  padding-right: 20px;
   float: left;
   margin-top: 4px;
   font-size: 16px;
@@ -362,13 +364,6 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-  .site-navigation {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translate(0, -50%);
-    -webkit-transform: translateY(-50%);
-  }
   .nav > li .dropdown-menu a,
   .nav > li .dropdown-menu a:hover {
     color: #484848;
@@ -1040,4 +1035,15 @@ h4 {
   .bloc-mob-center-text {
     text-align: center;
   }
+}
+
+/* changements css */
+.container-fluid {
+  width: 90%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
 }
